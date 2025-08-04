@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adivinhe o Número</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Adivinhe o Número</h1>
+    <p>Digite um número de 1 a 100:</p>
+    <input type="number" id="guessInput" />
+    <button onclick="checkGuess()">Tentar</button>
+    <p id="feedback"></p>
+    <p>Tentativas: <span id="attempts">0</span></p>
+    <button onclick="resetGame()">Reiniciar</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,21 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Adivinhe o Número</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Adivinhe o Número</h1>
-    <p>Digite um número de 1 a 100:</p>
-    <input type="number" id="guessInput" />
-    <button onclick="checkGuess()">Tentar</button>
-    <p id="feedback"></p>
-    <p>Tentativas: <span id="attempts">0</span></p>
-    <button onclick="resetGame()">Reiniciar</button>
-  </div>
-  <script src="script.js"></script>
+  <main class="game-wrapper">
+    <section class="container">
+      <h1>Adivinhe o Número</h1>
+
+      <p>Digite um número de <strong>1 a 100</strong>:</p>
+
+      <div class="controls">
+        <input
+          type="number"
+          id="guessInput"
+          min="1"
+          max="100"
+          step="1"
+          placeholder="Seu palpite"
+          inputmode="numeric"
+          autocomplete="off"
+        />
+        <button type="button" onclick="checkGuess()">Tentar</button>
+        <button type="button" class="ghost" onclick="resetGame()">Reiniciar</button>
+      </div>
+
+      <p id="feedback"></p>
+      <p>Tentativas: <span id="attempts">0</span></p>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
 </body>
 </html>

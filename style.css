@@ -1,23 +1,31 @@
+/* Fundo */
 body {
   background-image: url('background.jpg');
   background-size: cover;        /* Cobre toda a tela */
   background-position: center;   /* Centraliza a imagem */
   background-repeat: no-repeat;  /* Não repete */
-  background-attachment: fixed;  /* Fica fixa ao rolar */
+  background-attachment: fixed;  /* Fixa no rolar */
   margin: 0;
   min-height: 100vh;
   font-family: Arial, sans-serif;
-  color: white; /* deixa o texto legível no fundo escuro */
+  color: #fff; /* texto claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Caixa central */
 .container {
   text-align: center;
-  background: #333;
+  background: rgba(0, 0, 0, 0.55); /* translúcido pra ver o fundo */
   padding: 2rem;
   border-radius: 15px;
-  box-shadow: 0 0 20px #000;
+  box-shadow: 0 0 25px rgba(0,0,0,0.7);
+  max-width: 400px;
+  width: 90%;
 }
 
+/* Inputs */
 input {
   padding: 10px;
   width: 100px;
@@ -25,8 +33,13 @@ input {
   border-radius: 5px;
   border: none;
   margin: 10px;
+  text-align: center;
+  background: rgba(255,255,255,0.85);
+  color: #000;
+  font-weight: bold;
 }
 
+/* Botões */
 button {
   padding: 10px 20px;
   background-color: #b89b6a;
@@ -35,4 +48,9 @@ button {
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #a2855b;
 }

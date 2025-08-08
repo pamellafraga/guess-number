@@ -42,7 +42,7 @@ input {
 /* Botões */
 button {
   padding: 10px 20px;
-  background-color: #b89b6a;
+  background-color: #000; /* preto */
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -52,5 +52,5 @@ button {
 }
 
 button:hover {
-  background-color: #a2855b;
+  background-color: #222; /* cinza-escuro para efeito hover */
 }

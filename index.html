@@ -1,17 +1,20 @@
+<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Adivinhe o Número</title>
+  <!-- Importa o CSS principal do jogo -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main class="game-wrapper">
     <section class="container">
+      <!-- Título do jogo -->
       <h1>Adivinhe o Número</h1>
-
+      <!-- Instrução para o usuário -->
       <p>Digite um número de <strong>1 a 100</strong>:</p>
-
+      <!-- Área de controles: input e botões -->
       <div class="controls">
         <input
           type="number"
@@ -23,26 +26,21 @@
           inputmode="numeric"
           autocomplete="off"
         />
+        <!-- Botão para tentar o palpite -->
         <button type="button" onclick="checkGuess()">Tentar</button>
+        <!-- Botão para reiniciar o jogo -->
         <button type="button" class="ghost" onclick="resetGame()">Reiniciar</button>
       </div>
-
+      <!-- Mensagem de feedback para o usuário -->
       <p id="feedback"></p>
+      <!-- Exibe o número de tentativas -->
       <p>Tentativas: <span id="attempts">0</span></p>
     </section>
   </main>
-
+  <!-- Importa o script principal do jogo -->
   <script src="script.js" defer></script>
 </body>
 </html>
-
-<!--
-  index.html
-  Página principal do jogo "Adivinhe o Número".
-  Estrutura simples: um campo para o usuário digitar o palpite, botões para tentar e reiniciar,
-  e áreas para feedback e contagem de tentativas.
-  O layout e estilos são definidos em style.css e a lógica em script.js.
--->
 <!doctype html>
 <html lang="pt-BR">
 <head>
